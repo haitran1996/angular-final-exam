@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>Do you want delete the book?</h2>
+  </div>
+  <div class="panel-body">
+    <p>Name: {{ book.title }}</p>
+    <p>Author: {{ book.author }}</p>
+    <p>Description: {{ book.description }}</p>
+    <div class="col-12 ">
+      <a type="button" [routerLink]="['']"
+         class="btn btn-success">Cancel</a>
+      <button type="button"
+         class="btn btn-danger"  (click)="delete(book.id)">Delete</button>
+    </div>
+  </div>
+</div>
